@@ -1,0 +1,11 @@
+def is_palindrome(n):
+	stringnum=str(n)
+	i=0
+	while i<len(stringnum):
+		if stringnum[i]!=stringnum[len(stringnum)-1-i]:
+			return False
+		i=i+1
+	return True
+
+output = filter(is_palindrome, range(1, 1000))
+print(output)

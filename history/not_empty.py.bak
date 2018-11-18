@@ -1,0 +1,5 @@
+from functools import reduce
+def not_empty(s):
+    return s and s.strip()
+
+print(not_empty('A'),not_empty(''))
